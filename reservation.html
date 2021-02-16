@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/reservation.css">
+    <script src="https://kit.fontawesome.com/b52600e1d0.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="nav">
+        <img class="logo" src="imgs/Cars-Logo.webp" alt="logo">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery </a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!--end of nav-->
+    <section>
+        <div class="res">
+            <div class="res_box">
+            </div>
+            <div class="header_form">
+                <h1> BOOK A VEHICLE </h1>
+            </div>
+            <div class="formulaire">
+                <form class="form__q">
+                    <div class="row1">
+                        <span>Name</span>
+                        <input type="text" placeholder="Name">
+                        <span>Last Name</span>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div class="row2">
+                        <span>Phone Number</span>
+                        <input type="tel" placeholder="Phone number">
+                    </div>
+                    <div class="row3">
+                        <span>Select a vehicle</span>
+                        <select id="cars" name="cars">
+                            <option value="moto">Moto</option>
+                            <option value="citadine">Citadine</option>
+                            <option value="compact">Compact</option>
+                            <option value="berlin">Berlin</option>
+                            <option value="utilitaire">Utilitaire</option>
+                            <option value="engin">Engin de chantier</option>
+                            <option value="camion">Camion</option>
+                        </select>
+                    </div>
+                    <div class="row5">
+                        <span>Select your choice</span>
+                        <select id="cars2" name="cars">
+                            <option value="electrical">Electrical</option>
+                            <option value="hybride">Hybride</option>
+                            <option value="essence">Essence</option>
+                            <option value="diesel">Diesel</option>
+
+                        </select>
+                    </div>
+                    <div class="row4">
+                        <span>Choose from the list below</span>
+                        <select id="cars3" name="cars">
+                            <option value="Manual">Manual</option>
+                            <option value="auto">Automatic</option>
+                        </select>
+                    </div>
+                    <div class="days">
+                        <span>How many days you want to rent the vehicle? </span>
+                            <input id="days" type="number" required>
+                        </select>
+                    </div>
+
+                  <div class="btnn">          
+                    <button type="button"style="align-items: center;" onclick="reservation()"> Rent a Car </button>
+                  </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Beginning of footer-->
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--end of footer-->
+    <script src="JS/Main.js" ></script>
+
+</body>
+
+</html>
