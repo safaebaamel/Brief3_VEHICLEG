@@ -1,0 +1,455 @@
+/* ____________Navbar+header________________ */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.nav img {
+  position: fixed;
+  left: 110px;
+  width: 40x;
+  height: 40px;
+  margin-left: 0px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.nav {
+  position: fixed;
+  background-color: #9c2832;
+  border-bottom: 2px solid #9c2832;
+  text-align: right;
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  z-index: 1;
+}
+
+.menu {
+  margin: 0 110px 0 0;
+  color: white;
+  overflow: hidden;
+}
+
+
+.menu a {
+  color: white;
+  font-size: 14px;
+  margin: 0 30px 0 20px;
+  line-height: 60px;
+  text-decoration: none;
+
+}
+
+.menu a:hover {
+  opacity: 0.5;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.logo,
+.menu,
+.check {
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+/* ____________________Gallery_____________________ */
+
+.-fx-image-gal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  justify-content: center;
+}
+
+.-fx-gal-item {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.-fx-gal-item a {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.-fx-gal-image-thumb img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.-fx-gal-image-thumb:hover img {
+  cursor: pointer;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+}
+
+.titl {
+  padding: 32px;
+  text-align: center;
+  color: black;
+  padding-top: 75px;
+  margin: auto;
+}
+
+.titl h1 {
+  font-size: 3.5rem;
+}
+
+.titl p {
+  font-size: 1rem;
+}
+
+/* 
+________________________header car___________________ */
+
+
+.he_car {
+  color: #fff;
+  background-image: url(../imgs/12.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 654px;
+  width: 100%;
+  padding: 17%;
+}
+
+.he_car h1 {
+  font-size: 70px;
+}
+
+.he_car p {
+  font-size: 26px;
+}
+
+
+/* ____________________SLIDER____________________ */
+
+.btn-group button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+  background-color: white;
+}
+
+.btn-group img {
+  width: 37px;
+  height: 54px;
+}
+
+.btn-group img {
+  width: 37px;
+  height: 54px;
+}
+
+.ImageSlide img {
+  width: 60%;
+  height: 400px;
+  margin-left: 19%;
+}
+
+/* ________________Seaction Cards______________________ */
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background-color: black;
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+/* _______________FOOTER______________ */
+
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer .ro {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .ro a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .ro a:hover {
+  color: #9c2832;
+}
+
+.footer .ro ul {
+  width: 100%;
+}
+
+.footer .ro ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .ro a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+
+/* ________________________Media Query____________________ */
+
+@media (max-width:1260px) {
+
+  .logo {
+    width: auto;
+    height: 80px;
+    display: block;
+    margin: auto;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu img {
+    position: fixed;
+    left: 175px;
+    top: 6px;
+    width: 40x;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 10px;
+
+
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+
+  .button {
+    border-radius: 0px;
+  }
+
+  #toggle:checked+.menu {
+    display: block;
+
+  }
+
+  .form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form h2,
+  a {
+    width: 80%;
+  }
+
+  .form h2 {
+    margin-bottom: 20px;
+  }
+
+  .head_er {
+    left: 30%;
+
+  }
+}
+
+/* ____________header_car__________ */
+
+@media all and (max-width: 800px) {
+  .he_car h1 {
+    font-size: 37px;
+  }
+
+  .he_car P {
+    font-size: 19px;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* _______Footer________ */
+@media (max-width:720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .ro ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+
+  .footer .ro a i {
+    margin: 0% 3%;
+  }
+}
+
+/*___________________ Galery______________ */
+
+@media (min-width: 420px) {
+  .-fx-image-gal {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .-fx-gal-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .-fx-gal-item {
+    width: 33.33%;
+  }
+}
+
+/* ______section responsive_______ */
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
