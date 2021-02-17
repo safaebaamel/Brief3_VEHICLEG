@@ -31,3 +31,5 @@ Le siteweb doit respecter l'UX/UI
 Le siteweb doit respecter le responsive design
 
 Le siteweb doit respecter les normes du SEO
+
+<img src="imgs/algo.jpg">
