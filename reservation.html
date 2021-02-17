@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/reservation.css">
+    <link rel="stylesheet" href="css/reservation.css">
     <script src="https://kit.fontawesome.com/b52600e1d0.js"></script>
     <title>Home</title>
 </head>
@@ -43,7 +43,8 @@
                     </div>
                     <div class="row3">
                         <span>Select a vehicle</span>
-                        <select id="cars" name="cars">
+                        <select id="cars" name="cars" onchange="myFunction()">
+                            <option value="">TYPE1</option>
                             <option value="moto">Moto</option>
                             <option value="citadine">Citadine</option>
                             <option value="compact">Compact</option>
@@ -55,7 +56,8 @@
                     </div>
                     <div class="row5">
                         <span>Select your choice</span>
-                        <select id="cars2" name="cars">
+                        <select id="cars2" name="cars" onchange="myFunction()">
+                            <option value="">TYPE2</option>
                             <option value="electrical">Electrical</option>
                             <option value="hybride">Hybride</option>
                             <option value="essence">Essence</option>
@@ -65,7 +67,7 @@
                     </div>
                     <div class="row4">
                         <span>Choose from the list below</span>
-                        <select id="cars3" name="cars">
+                        <select id="cars3" name="cars" onchange="myFunction()">
                             <option value="Manual">Manual</option>
                             <option value="auto">Automatic</option>
                         </select>
@@ -77,7 +79,7 @@
                     </div>
 
                   <div class="btnn">          
-                    <button type="button"style="align-items: center;" onclick="reservation()"> Rent a Car </button>
+                    <button type="button"style="align-items: center;" onclick ="reservation()"> Rent a Car </button>
                   </div>
                 </form>
             </div>

@@ -52,6 +52,64 @@ function MessageChannelbox() {
   alert("Thank you Mr/Mrs " + a + " for your message." + "\nEmail: " + b + "\nsubject: " + c);
 }
 
+// Function to compelete reservation
+
+function myFunction() {
+  var x = document.getElementById("cars").value;
+  if(x == "moto"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='electrical'>Electrical</option>" +
+    "<option value='essence'>Essence</option>";
+  }
+  if(x == "citadine"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='essence'>Essence</option>" +
+    "<option value='diesel'>Diesel</option>" +
+    "<option value='electrical'>Electrical</option>" +
+    "<option value='hybride'>Hybride</option>" ;
+  }
+  if(x == "compact"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='essence'>Essence</option>" +
+    "<option value='diesel'>Diesel</option>" + 
+    "<option value='hybride'>Hybride</option>";
+  }
+  if(x == "Berlin"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='essence'>Essence</option>" +
+    "<option value='diesel'>Diesel</option>" + 
+    "<option value='hybride'>Hybride</option>";
+  }
+  if(x == "utilitaire"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='diesel'>Diesel</option>";  
+  }
+  if(x == "engin"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='essence'>Essence</option>" +
+    "<option value='diesel'>Diesel</option>";
+  }
+  if(x == "camion"){
+    document.getElementById("cars2").innerHTML =
+    "<option value='diesel'>Diesel</option>";
+  }
+
+var x2 = document.getElementById("cars2").value;
+if(x == "berlin" || x2 ){
+    document.getElementById("cars3").innerHTML =
+    "<option value='auto'>Automatic</option>" + 
+    "<option value='manual'>Manual</option>";
+  }
+  if(x2 == "hybride" || x2){
+    document.getElementById("cars3").innerHTML =
+    "<option value='manual'>Manual</option>" +
+    "<option value='auto'>Automatic</option>";
+  }
+  else {
+    document.getElementById("cars3").innerHTML = 
+    "<option value='manual'>Manual</option>";
+  }
+}
 
 
 // reservation algorithm :)) 
@@ -111,9 +169,5 @@ function reservation() {
   }
   som = som * i;
   alert("Thank you for your purchase\n" +  
-<<<<<<< HEAD
 "The bill: "+ som + "\$");
-=======
-"The bill: "+ som);
->>>>>>> ac6c28bbb61667218fca81bac3d8949c7882c8e2
 }
