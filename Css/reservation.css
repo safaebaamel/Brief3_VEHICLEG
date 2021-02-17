@@ -7,14 +7,14 @@
     font-family: 'Montserrat';
 }
 
-.nav img {
-    position: absolute;
-    left: 110px;
-    width: 40px;
-    height: 40px;
-    margin-left: 0px;
-    margin-top: 10px;
-    z-index: 1;
+#logo {
+    float: left;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: azure;
 }
 
 .nav {
@@ -200,7 +200,7 @@ button:hover {
 
 /* ________________________Media Query____________________ */
 
-@media (max-width:1360px) {
+@media (max-width:760px) {
 
     .logo {
         width: auto;

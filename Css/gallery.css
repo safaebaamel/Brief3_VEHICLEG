@@ -7,14 +7,14 @@
   font-family: 'Montserrat';
 }
 
-.nav img {
-  position: fixed;
-  left: 110px;
-  width: 40x;
-  height: 40px;
-  margin-left: 0px;
-  margin-top: 10px;
-  z-index: 1;
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: azure;
 }
 
 .nav {
