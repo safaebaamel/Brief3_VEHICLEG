@@ -74,7 +74,7 @@ function myFunction() {
     "<option value='diesel'>Diesel</option>" + 
     "<option value='hybride'>Hybride</option>";
   }
-  if(x == "Berlin"){
+  if(x == "berlin"){
     document.getElementById("cars2").innerHTML =
     "<option value='essence'>Essence</option>" +
     "<option value='diesel'>Diesel</option>" + 
@@ -95,17 +95,11 @@ function myFunction() {
   }
 
 var x2 = document.getElementById("cars2").value;
-if(x == "berlin" || x2 ){
+if(x == "berlin" && x2 || x == "camion" && x2){
     document.getElementById("cars3").innerHTML =
     "<option value='auto'>Automatic</option>" + 
     "<option value='manual'>Manual</option>";
-  }
-  if(x2 == "hybride" || x2){
-    document.getElementById("cars3").innerHTML =
-    "<option value='manual'>Manual</option>" +
-    "<option value='auto'>Automatic</option>";
-  }
-  else {
+  } else {
     document.getElementById("cars3").innerHTML = 
     "<option value='manual'>Manual</option>";
   }
@@ -167,7 +161,12 @@ function reservation() {
       som += 0.19;
       break;
   }
-  som = som * i;
-  alert("Thank you for your purchase\n" +  
-"The bill: "+ som + "\$");
+  if (i < 0) {
+    alert("Please enter a valid number greater than or equal to 1.");
+  }
+  else {
+    som = som * i;
+    alert("Thank you for your purchase\n" +  
+    "The bill: "+ som + "\$");
+  }
 }
