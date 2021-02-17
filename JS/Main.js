@@ -111,5 +111,9 @@ function reservation() {
   }
   som = som * i;
   alert("Thank you for your purchase\n" +  
+<<<<<<< HEAD
 "The bill: "+ som + "\$");
+=======
+"The bill: "+ som);
+>>>>>>> ac6c28bbb61667218fca81bac3d8949c7882c8e2
 }
