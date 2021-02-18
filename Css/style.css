@@ -99,7 +99,7 @@ header nav li:last-child {
 
 .video-overlay {
     position: absolute;
-    background-color: rgba(35,45,57,0.8);
+    background-color: rgba(10, 10, 10, 0.8);
     top: 0;
     left: 0;
     bottom: 7px;
