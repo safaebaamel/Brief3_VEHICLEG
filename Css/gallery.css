@@ -1,68 +1,102 @@
 /* ____________Navbar+header________________ */
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  scroll-behavior: smooth;
 }
 
-nav .logo {
-  float: left;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  color: azure;
-}
+body {
+  font-family: 'Lato'sans-serif;
+  margin: 0;
+  font-family: inherit;
 
-.nav {
-  position: fixed;
-  background-color: #9c2832;
-  border-bottom: 2px solid #9c2832;
-  text-align: right;
-  height: 70px;
+}
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  line-height: 70px;
-  z-index: 1;
+  height: 100%;
+  object-fit: cover;
 }
 
-.menu {
-  margin: 0 110px 0 0;
-  color: white;
-  overflow: hidden;
+ul, nav {
+  padding: 0;
+  list-style-type: none;
+  font-family: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
-.menu a {
-  color: white;
-  font-size: 14px;
-  margin: 0 30px 0 20px;
-  line-height: 60px;
+a {
+  color: #fff;
   text-decoration: none;
-
+  cursor: pointer;
+  opacity: 0.9;
+  font-family: inherit;
 }
 
-.menu a:hover {
-  opacity: 0.5;
+a:hover {
+  opacity: 1;
 }
 
-.logo img {
-  width: 200px;
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  font-family: inherit;
 }
 
-.logo,
-.menu,
-.check {
-  display: inline-block;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  padding: 10px 100px 0;
+  z-index: 3;
+  background-color: black;
+  top: 0;
+  font-family: inherit;
+}
+header nav ul {
+  display: flex;
 }
 
-.menu li {
-  display: inline-block;
-  padding: 10px 15px;
+header nav li {
+  margin: 0 15px;
+  font-family: inherit;
 }
 
+header nav li:first-child {
+  margin-left: 0;
+  font-family: inherit;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+@media all and (max-width: 800px) {
+  body {
+      font-style: 15px;
+    }
+    header {
+      flex-direction: column;
+      padding: 10px !important;
+    }
+    header h2 {
+      margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 360px) {
+  header nav li {
+    margin: 0 10px;
+  }
+}
 /* ____________________Gallery_____________________ */
 
 .-fx-image-gal {
@@ -113,7 +147,7 @@ nav .logo {
   padding: 32px;
   text-align: center;
   color: black;
-  padding-top: 75px;
+  padding-top: 100px;
   margin: auto;
 }
 
@@ -129,9 +163,9 @@ nav .logo {
 ________________________header car___________________ */
 
 
-.he_car {
+/* .he_car {
   color: #fff;
-  background-image: url(../imgs/12.jpg);
+  background-image: url(../imgs/pic1.jfif);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -146,13 +180,13 @@ ________________________header car___________________ */
 
 .he_car p {
   font-size: 26px;
-}
+} */
 
 
 /* ____________________SLIDER____________________ */
 
 .btn-group button {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   border: 1px solid white;
   color: white;
   padding: 10px 24px;

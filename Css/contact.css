@@ -81,6 +81,23 @@ header nav li:last-child {
   margin-right: 0;
 }
 
+@media all and (max-width: 800px) {
+  body {
+      font-style: 15px;
+    }
+    header {
+      flex-direction: column;
+      padding: 10px !important;
+    }
+    header h2 {
+      margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 360px) {
+  header nav li {
+    margin: 0 10px;
+  }
+}
 
 /* ____________________Contact Us Form ___________________ */
 .lbl,
