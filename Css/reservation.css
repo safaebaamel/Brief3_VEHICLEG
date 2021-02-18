@@ -213,7 +213,7 @@ a:hover {
     height: 2px;
     bottom: -1px;
     left: 0;
-    background: #0dd78e;
+    background: #9c2832;
     transform-origin: left;
     transform: scaleX(0);
     transition: 0.4s ease;
@@ -271,7 +271,7 @@ a:hover {
     width: 290px;
     height: 40px;
     border-radius: 30px;
-    background-color: #0dd78e;
+    background-color: #9c2832;
     border: none;
     color: #fff;
     font-weight: bold;

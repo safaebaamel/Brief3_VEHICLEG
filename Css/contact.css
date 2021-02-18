@@ -1,71 +1,86 @@
 /* ____________Navbar+header________________ */
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
-} 
-
-#logo {
-  float: left;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  color: azure;
+  scroll-behavior: smooth;
 }
 
-.nav {
-  background-color: #9c2832;
-  border-bottom: 2px solid #9c2832;
-  text-align: right;
-  height: 70px;
+body {
+  font-family: 'Lato'sans-serif;
+  margin: 0;
+  font-family: inherit;
+  background-color: #000;
+
+}
+section video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  line-height: 70px;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul, nav {
   padding: 0;
-  z-index: 1;
+  list-style-type: none;
+  font-family: inherit;
 }
 
-nav {
-  position: fixed;
+html {
+  scroll-behavior: smooth;
 }
 
-.menu {
-  margin: 0 110px 0 0;
-  color: white;
-  overflow: hidden;
-}
-
-
-.menu a {
-  color: white;
-  font-size: 14px;
-  margin: 0 30px 0 20px;
-  line-height: 60px;
+a {
+  color: #fff;
   text-decoration: none;
-  
+  cursor: pointer;
+  opacity: 0.9;
+  font-family: inherit;
 }
 
-.menu a:hover {
-  opacity: 0.5;
+a:hover {
+  opacity: 1;
 }
 
-.logo img {
-  width: 200px;
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 24px;
+  font-family: inherit;
 }
 
-.logo,
-.menu,
-.check {
-  display: inline-block;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  padding: 10px 100px 0;
+  z-index: 3;
+  background-color: black;
+  top: 0;
+  font-family: inherit;
+}
+header nav ul {
+  display: flex;
 }
 
-.menu li {
-  display: inline-block;
-  padding: 10px 15px;
+header nav li {
+  margin: 0 15px;
+  font-family: inherit;
 }
+
+header nav li:first-child {
+  margin-left: 0;
+  font-family: inherit;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
 
 /* ____________________Contact Us Form ___________________ */
 .lbl,
@@ -87,7 +102,7 @@ li {
 
 span {
   font-weight: 700;
-  color: #102a43;
+  color: #7f7f7f;
   line-height: 35px;
   line-height: 2.5rem;
   font-size: 12px;
@@ -111,12 +126,12 @@ button[type="button"] {
 }
 
 form {
-  background-color: #ffffff;
+  background-color: #000000;
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px #7f7f7f;
   border-radius: 3px;
   overflow: hidden;
 }
@@ -125,9 +140,9 @@ button,input,
 textarea {
   width: 100%;
   padding: 9px 20px;
-  border: 1px solid #e1e2eb;
-  background-color: #fff;
-  color: #102a43;
+  border: 1px solid #9d9da0;
+  background-color: rgb(255, 255, 255);
+  color: #898e94;
   caret-color: #829ab1;
   box-sizing: border-box;
   font-size: 1rem;
