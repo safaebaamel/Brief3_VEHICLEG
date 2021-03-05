@@ -354,13 +354,24 @@ p.note > span {
 
   
 
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 800px) and (min-width: 200px) {
+    * {
+      justify-content: center;
+    }
+
     body {
         font-style: 15px;
       }
       header {
         flex-direction: column;
         padding: 10px !important;
+        font-size: 12px;
+        width: 90%;
+        align-items: center;
+      }
+      .auth-form-wrapper {
+        margin: auto 0;
+        justify-content: center;
       }
       header h2 {
         margin-bottom: 15px;
@@ -406,16 +417,17 @@ p.note > span {
   }
   
   /* _______Footer________ */
-  @media (max-width:720px) {
+  @media (max-width:720px) and (min-width: 200) {
     .footer {
       text-align: left;
       padding: 5%;
+      text-align: center;
     }
   
     .footer .row ul li {
       display: block;
       margin: 10px 0px;
-      text-align: left;
+      text-align: center;
     }
   
     .footer .row a i {

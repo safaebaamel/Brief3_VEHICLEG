@@ -80,16 +80,26 @@ header nav li:last-child {
   margin-right: 0;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 800px) and (min-width: 200px) {
+  * {
+    justify-content: center;
+  }
+
   body {
       font-style: 15px;
     }
     header {
       flex-direction: column;
       padding: 10px !important;
+      font-size: 12px;
+      width: 100%;
+      align-items: center;
     }
-    header h2 {
-      margin-bottom: 15px;
+    .titl h1 {
+      font-size: smaller;
+    }
+    .-fx-image-item .-fx-gal-image-thumb a img{
+      margin-bottom: 10px;
     }
 }
 @media all and (max-width: 360px) {
@@ -145,14 +155,14 @@ header nav li:last-child {
 
 .titl {
   padding: 32px;
+  padding-top: 100px;
   text-align: center;
   color: black;
-  padding-top: 100px;
-  margin: auto;
 }
 
 .titl h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  padding: 30px;
 }
 
 .titl p {
@@ -311,6 +321,7 @@ img {
   padding: 30px 0px;
   font-family: 'Play', sans-serif;
   text-align: center;
+  justify-content: center;
 }
 
 .footer .ro {
@@ -437,16 +448,17 @@ img {
 }
 
 /* _______Footer________ */
-@media (max-width:720px) {
+@media (max-width:720px) and (min-width: 200px){
   .footer {
     text-align: left;
     padding: 5%;
+    text-align: center;
   }
 
   .footer .ro ul li {
     display: block;
     margin: 10px 0px;
-    text-align: left;
+    text-align: center;
   }
 
   .footer .ro a i {

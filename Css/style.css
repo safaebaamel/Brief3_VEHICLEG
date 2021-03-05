@@ -455,16 +455,30 @@ img {
 
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 800px) and (min-width: 200px) {
   body {
       font-style: 15px;
     }
     header {
       flex-direction: column;
+      font-size: 12px;
       padding: 10px !important;
     }
     header h2 {
       margin-bottom: 15px;
+    }
+    .main-banner .caption h2 {
+      font-size: x-small;
+    }
+    .video-overlay {
+      font-size: smaller;
+      position: static;
+    }
+    .cards {
+      justify-content: center;
+    }
+    .avis-pics img {
+      margin-bottom: 10px;
     }
 }
 @media all and (max-width: 360px) {
@@ -511,12 +525,13 @@ img {
   .footer {
     text-align: left;
     padding: 5%;
+    text-align: center;
   }
 
   .footer .row ul li {
     display: block;
     margin: 10px 0px;
-    text-align: left;
+    text-align: center;
   }
 
   .footer .row a i {
