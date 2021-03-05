@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\gestion_des_apprenants\\styles"
+		},
+		{
+			"path": "..\\gestion_des_apprenants\\pages"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "styles"
+	}
+}
