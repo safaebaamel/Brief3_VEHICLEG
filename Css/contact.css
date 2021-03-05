@@ -92,7 +92,7 @@ header nav li:last-child {
     header {
       flex-direction: column;
       padding: 10px !important;
-      font-size: 14px;
+      font-size: 15px;
       width: 90%;
       align-items: center;
     }
@@ -104,7 +104,10 @@ header nav li:last-child {
     }
     .cont form {
       font-size: smaller;
-      padding-right: 50px;
+      padding-right: 70px;
+      padding-left: 90px;
+      justify-content: center;
+      margin: 0 auto;
     }
     .cont form li {
       justify-content: center;
