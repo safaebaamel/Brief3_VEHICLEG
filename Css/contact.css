@@ -84,16 +84,18 @@ header nav li:last-child {
 @media all and (max-width: 800px) and (min-width: 200px) {
   * {
     justify-content: center;
+    overflow-x: hidden;
   }
 
   body {
       font-style: 15px;
+      overflow-x: hidden;
     }
     header {
       flex-direction: column;
       padding: 10px !important;
-      font-size: 15px;
-      width: 90%;
+      font-size: 12px;
+      width: 100%;
       align-items: center;
     }
     header h2 {
@@ -105,9 +107,8 @@ header nav li:last-child {
     .cont form {
       font-size: smaller;
       padding-right: 70px;
-      padding-left: 90px;
+      padding-left: 50px;
       justify-content: center;
-      margin: 0 auto;
     }
     .cont form li {
       justify-content: center;
