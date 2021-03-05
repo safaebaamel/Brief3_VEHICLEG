@@ -180,7 +180,6 @@ header nav li:last-child {
   position: absolute;
   top: 56%;
   left: 50%;
-  width: 100%;
   padding: 30px 60px;
   transform: translate(-50%, -50%);
   background: black;
