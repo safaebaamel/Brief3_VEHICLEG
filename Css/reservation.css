@@ -366,6 +366,8 @@ p.note>span {
 
   body {
     font-style: 15px;
+    overflow-x: hidden;
+
   }
 
   header {
@@ -379,6 +381,7 @@ p.note>span {
   .auth-form-wrapper {
     margin: auto 0;
     justify-content: center;
+    width: 100%;
   }
 
   header h2 {
